@@ -9,5 +9,3 @@ And Add your Name Behind Me
 ![venom](https://static.antyweb.pl/wp-content/uploads/2018/10/06113507/venomending-blogroll-1538505459077_1280w.jpg)
 
 [Anologicon](https://github.com/anologicon)
-
-![venom](https://observatoriodocinema.bol.uol.com.br/wp-content/uploads/2018/08/Venomfilme.jpg)
