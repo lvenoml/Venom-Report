@@ -1,0 +1,1 @@
+To that one soul reading this, I know you're tired.You're fed up. You're so close to breaking but there's strength within you even when you feel weak. Keep Fighting.
