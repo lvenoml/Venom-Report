@@ -38,8 +38,9 @@ def MergeSort(merge_list):
 
 listy = []
 
-for loop1 in range(0,50,1): #Makes random list of numbers
+for loop1 in range(0,20,1): #Makes random list of numbers
     loop = random.randint(0,100)
     listy.append(loop)
-
+    
+print(listy)
 print(MergeSort(listy))
