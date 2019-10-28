@@ -1,0 +1,38 @@
+#Input
+date = int(input())
+month = int(input())
+year = int(input())
+
+#Leap Year Check
+if year % 400 == 0:
+    Leap_Year = True
+elif year % 100 == 0:
+    Leap_Year = False
+elif year % 4 == 0:
+    Leap_Year = True
+else:
+    Leap_Year = False
+    
+#Month Check
+if month < 1 or month > 12:
+    month_valid=False
+else:
+    month_valid=True
+
+#Date Check
+if date == 29 and month == 2 and Leap_Year == True:
+    valid = True
+elif date < 29 and date > 1 and month == 2 and Leap_Year == False:
+    valid = True
+elif date == 31 and (month == 1 or month == 3 or \
+    month == 5 or month == 7 or month == 8 or month == 10 or month == 12):
+    valid = True
+elif date <= 30 and date >= 1 and month_valid==True and month != 2:
+    valid = True
+else :
+    valid = False
+
+if valid==True:
+    print("Valid")
+else :
+    print ("Not Valid")
