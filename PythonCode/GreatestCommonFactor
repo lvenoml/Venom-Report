@@ -1,0 +1,13 @@
+#gcf
+number1 = int(input("Enter a whole number:"))
+number2 = int(input("Enter another whole number:"))
+Temp1 = number1
+Temp2 = number2
+while Temp1 != Temp2:
+    if Temp1>Temp2:
+        Temp1=Temp1-Temp2
+    else:
+        Temp2=Temp2-Temp1
+    
+Result = Temp1
+print(Result, "is GCF of", number1, " and ", number2)

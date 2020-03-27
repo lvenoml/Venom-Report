@@ -1,0 +1,46 @@
+import random
+
+def MergeSort(merge_list):
+    '''
+    List is of coordinates, but when compared uses value attributed to one coorinate taken from the (distance) dictionary
+    '''
+    if len(merge_list) > 1:
+        mid = len(merge_list) // 2
+        left_half = merge_list[:mid] #Left half of list
+        right_half = merge_list[mid:] #Right half of list
+        MergeSort(left_half) #Continually splits left half until only left with 1 item on left list
+        MergeSort(right_half) 
+        i = j = k = 0
+
+        while i < len(left_half) and j < len(right_half): #
+            if left_half[i] < right_half[j]:
+                merge_list[k] = left_half[i]
+                i += 1
+            else:
+                merge_list[k] = right_half[j]
+                j += 1
+
+            k += 1
+
+        #Checks if left half has elements not merged (Into same value)
+        while i < len(left_half):
+            merge_list[k] = left_half[i]
+            i += 1
+            k += 1
+
+        #Checks if right half has elements not merged
+        while j < len(right_half):
+            merge_list[k] = right_half[j]
+            j += 1
+            k += 1
+
+        return merge_list
+
+listy = []
+
+for loop1 in range(0,20,1): #Makes random list of numbers
+    loop = random.randint(0,100)
+    listy.append(loop)
+    
+print(listy)
+print(MergeSort(listy))
